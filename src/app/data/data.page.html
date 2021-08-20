@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data Binding Page</ion-title>
+  </ion-toolbar>
+  <ion-back-button></ion-back-button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h3>Click the button</h3>
+  <ion-button (click)=count()>Click ME!</ion-button>
+  <br>
+  <h2>Number of presses: {{numOfTimes}}</h2>
+  <br>
+  <app-list></app-list>
+
+</ion-content>

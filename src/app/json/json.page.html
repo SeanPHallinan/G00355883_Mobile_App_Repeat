@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Json Page</ion-title>
+  </ion-toolbar>
+  <ion-back-button></ion-back-button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ul>
+    <li *ngFor="let employee of employees">{{employee.name}}, {{employee.tillNum}}, {{employee.job}}</li>
+  </ul>
+</ion-content>

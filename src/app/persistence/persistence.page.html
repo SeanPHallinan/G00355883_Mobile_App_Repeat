@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>persistence</ion-title>
+  </ion-toolbar>
+  <ion-back-button></ion-back-button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-radio-group [(ngModel)]="myWeather">
+      <ion-list-header>
+        <ion-label>
+          Select the Current weather in your area
+        </ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Sunny</ion-label>
+        <ion-radio value="sunny"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Rainy</ion-label>
+        <ion-radio value="rainy"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Windy</ion-label>
+        <ion-radio value="windy"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Lightning</ion-label>
+        <ion-radio value="lightning"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Other</ion-label>
+        <ion-radio value="other"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <br>
+  <ion-label>The weather is {{myWeather}}</ion-label>
+  <br>
+  <ion-button (click)="updateWeather()">Update Weather</ion-button>
+</ion-content>
